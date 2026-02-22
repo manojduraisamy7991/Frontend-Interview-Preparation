@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import ProgressBar from "./component/ProgressBar";
 import Button from "./component/Button";
+import HOC from "./component/Hoc";
 import "./styles.css";
 
 let timer = null;
@@ -39,6 +40,7 @@ export default function App() {
       <h1>Progress Bar </h1>
       <ProgressBar completedPercentage={completedPercentage} />
       <Button handleClick={handleOnclick} label={stop ? "stop" : "start"} />
+      <HOC />
     </div>
   );
 }
